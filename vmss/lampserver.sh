@@ -17,4 +17,5 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 yum install -y php56w
 
 yum install -y php56w-fpm
+curl https://raw.githubusercontent.com/amitkriplani/azure-scripts/master/vmss/php-fpm-www.conf > /etc/php-fpm.d/www.conf
 service php-fpm start
